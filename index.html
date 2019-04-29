@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>To Do</title>
+    <link rel="stylesheet" href="css/button.css">
+    <link rel="stylesheet" href="css/todo.css">
+    <link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+    <div id="todo" class="todo-module">
+        <textarea id="new_todo_content"></textarea>
+        <div class="btn btn-add">+ New task</div>
+        <div class="todo-title">Your tasks:</div>
+        <div id="todo_list" class="todo-list">
+            <script id="todo_new_task_template" type="text/template">
+                <div class="todo-task">
+                    <header>
+                        <div class="count">{{task_number}}</div>
+                        <div class="actions">
+                            <i class="edit">Edit</i>
+                            <i class="remove">Remove</i>
+                        </div>
+                    </header>
+                    <div class="content">{{task_text}}</div>
+                </div>
+            </script>
+            <script id="todo_empty_template" type="text/template">
+                <div class="todo-empty">
+                    Looks like you don't any tasks to do. Create one!
+                </div>
+            </script>
+            <!-- <div class="todo-task">
+                <header>
+                    <div class="count">1</div>
+                    <div class="actions">
+                        <i class="edit">Edit</i>
+                        <i class="remove">Remove</i>
+                    </div>
+                </header>
+                <div class="content">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo laudantium velit esse!</div>
+            </div> -->
+            <!-- <div class="todo-empty">
+                Looks like you don't any tasks to do. Create one!
+            </div> -->
+        </div>
+    </div>
+
+    <script src="js/jQuery.js"></script>
+    <script src="js/HTML-template.js"></script>
+    <script src="js/todo.js"></script>
+</body>
+</html>
