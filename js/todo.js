@@ -22,6 +22,7 @@ var todo = (function(){
     render();
 
     // sutvarkome teksta (saugumo prasme)
+        // english: text sanitization
     function secureText( text ) {
         return text.replace(/&/g, '&amp;')
                     .replace(/</g, '&lt;')
