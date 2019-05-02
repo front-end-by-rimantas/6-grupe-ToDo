@@ -27,6 +27,20 @@
                     <div class="content">{{task_text}}</div>
                 </div>
             </script>
+            <script id="todo_update_task_template" type="text/template">
+                <div class="todo-task">
+                    <header>
+                        <div class="count">{{task_number}}</div>
+                        <div class="actions">
+                            <i class="save">Save</i>
+                            <i class="cancel">Cancel</i>
+                        </div>
+                    </header>
+                    <div class="content">
+                        <textarea>{{task_text}}</textarea>
+                    </div>
+                </div>
+            </script>
             <script id="todo_empty_template" type="text/template">
                 <div class="todo-empty">
                     Looks like you don't any tasks to do. Create one!
